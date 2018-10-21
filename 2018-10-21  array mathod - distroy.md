@@ -1,11 +1,11 @@
 
- # TIL(Today I learend)
 
 
-##  Array Mathod 
 
-### 1. 원본배열을 파괴 시키지 않음 
- #### 1. Array.prototype.slice(begin?,end?)
+#  Array Mathod 
+
+## 1. 원본배열을 파괴 시키지 않음 
+ ### 1. Array.prototype.slice(begin?,end?)
    - begin에서 시작해 end 바로 앞까지 복사해 넣은 새 배열을 반환합니다
   
   ```
@@ -31,7 +31,7 @@
 - 인덱스가 음수면 배열의 길이를 더합니다. 
 
 ---
-#### 2. Array.prototype.join(separator?)
+### 2. Array.prototype.join(separator?)
 - 배열요소 전체에 toString()을 적용해 문자열로 바꾸고 그 사이에 seperator를 끼워넣어 만든 문자열을 반환합니다.
 ```
 const arr = [1, 2, 3];
