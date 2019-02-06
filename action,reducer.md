@@ -194,7 +194,7 @@ todos 분리하기
 
 ```js
 function todos(state = [], action) {
-  //todos가 state도 받지만 이건 그냥 배열이
+  //todos가 state도 받지만 이건 그냥 배열입니다.
   switch (action.type) {
     case ADD_TODO:
       return [
@@ -233,6 +233,8 @@ function todoApp(state = initialState, action) {
   }
 }
 ```
+
+- visibilityFilter만을 관리하는 리듀서도 따로 뽑아 낼 수 있습니다!
 
 ```js
 function todos(state = [], action) {
@@ -274,6 +276,8 @@ function todoApp(state = {}, action) {
   };
 }
 ```
+
+각각의 리듀서는 전체 상태에서 자신의 부분만을 관리합니다. 모든 리듀서의 state 매개변수는 서로 다르고, 자신이 관리하는 부분에 해당합니다.
 
 - 리듀서 합치기
 
